@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+:root{
+    --primary-color: #131086;
+    --secondary-color:#b621f3;
+
+
+
+}
+
+* { 
+ box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: "Inter" sans-serif;
+    background-color:var(--primary-color);
+    background-color:var(--secondary-color);
+    padding:40px;
+}
+
+.container{
+    min-height: calc(250vh-60px *3);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    overflow:hidden ;
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 100px;
+    background-color: white;
+}
+
+.login-right{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    border-image-width: 80%;
+}
+
+.login-header {
+    width: 450px;
+    display: flex;
+    flex-direction:column;
+    gap: 35px;
+}
+.login-form-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.form-item label:not(.checkboxlabel) {
+    display: inline-block;
+    background-color: white;
+}
+
+input[type='text'],
+input[type='password']{
+    border: 2px solid black;
+    height: 50px;
+    padding: 0;
+    width:90%;
+    outline:none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px ;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+input[type='checkbox']{
+    width:20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+}
+.button{
+    width:450px;
+    height: 50px;
+   border: none;
+   background-color: linear-gradient(blue);
+   color:black;
+   text-align: center;
+   border-radius: 100px;
+   text-transform: uppercase;
+   background-color:var(--primary-color);
+   background-color:var(--secondary-color);
+
+}
